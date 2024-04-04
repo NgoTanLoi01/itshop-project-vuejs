@@ -3,14 +3,15 @@
 </template>
 
 <script>
-import Master from './views/Master';
-
+import Master from './views/Master.vue';
 
 export default {
   components: {
     Master
-  },
+  }
 };
 </script>
 
-<style></style>
+<style>
+/* CSS của App.vue */
+</style>

@@ -1,4 +1,5 @@
 <template>
+<!-- <router-view></router-view> -->
     <div class="page-wrapper">
         <header class="header header-intro-clearance header-3">
             <div class="header-top">
@@ -54,7 +55,8 @@
                         </button>
 
                         <a href="index.html" class="logo">
-                            <img src="frontend/assets/images/demos/demo-3/logo.png" alt="Molla Logo" width="105" height="25">
+                            <img src="frontend/assets/images/demos/demo-3/logo.png" alt="Molla Logo" width="105"
+                                height="25">
                         </a>
                     </div><!-- End .header-left -->
 
@@ -143,7 +145,8 @@
 
                                         <figure class="product-image-container">
                                             <a href="product.html" class="product-image">
-                                                <img src="frontend/assets/images/products/cart/product-1.jpg" alt="product">
+                                                <img src="frontend/assets/images/products/cart/product-1.jpg"
+                                                    alt="product">
                                             </a>
                                         </figure>
                                         <a href="#" class="btn-remove" title="Remove Product"><i
@@ -164,7 +167,8 @@
 
                                         <figure class="product-image-container">
                                             <a href="product.html" class="product-image">
-                                                <img src="frontend/assets/images/products/cart/product-2.jpg" alt="product">
+                                                <img src="frontend/assets/images/products/cart/product-2.jpg"
+                                                    alt="product">
                                             </a>
                                         </figure>
                                         <a href="#" class="btn-remove" title="Remove Product"><i
@@ -497,11 +501,13 @@
                                             <div class="col-md-4">
                                                 <div class="banner banner-overlay">
                                                     <a href="category.html" class="banner banner-menu">
-                                                        <img src="frontend/assets/images/menu/banner-1.jpg" alt="Banner">
+                                                        <img src="frontend/assets/images/menu/banner-1.jpg"
+                                                            alt="Banner">
 
                                                         <div class="banner-content banner-content-top">
                                                             <div class="banner-title text-white">Last
-                                                                <br>Chance<br><span><strong>Sale</strong></span></div>
+                                                                <br>Chance<br><span><strong>Sale</strong></span>
+                                                            </div>
                                                             <!-- End .banner-title -->
                                                         </div><!-- End .banner-content -->
                                                     </a>
@@ -536,7 +542,8 @@
                                             <div class="col-md-6">
                                                 <div class="banner banner-overlay">
                                                     <a href="category.html">
-                                                        <img src="frontend/assets/images/menu/banner-2.jpg" alt="Banner">
+                                                        <img src="frontend/assets/images/menu/banner-2.jpg"
+                                                            alt="Banner">
 
                                                         <div class="banner-content banner-content-bottom">
                                                             <div class="banner-title text-white">New
@@ -737,7 +744,8 @@
                             <div class="intro-banners">
                                 <div class="banner mb-lg-1 mb-xl-2">
                                     <a href="#">
-                                        <img src="frontend/assets/images/demos/demo-3/banners/banner-1.jpg" alt="Banner">
+                                        <img src="frontend/assets/images/demos/demo-3/banners/banner-1.jpg"
+                                            alt="Banner">
                                     </a>
 
                                     <div class="banner-content">
@@ -752,7 +760,8 @@
 
                                 <div class="banner mb-lg-1 mb-xl-2">
                                     <a href="#">
-                                        <img src="frontend/assets/images/demos/demo-3/banners/banner-2.jpg" alt="Banner">
+                                        <img src="frontend/assets/images/demos/demo-3/banners/banner-2.jpg"
+                                            alt="Banner">
                                     </a>
 
                                     <div class="banner-content">
@@ -767,7 +776,8 @@
 
                                 <div class="banner mb-0">
                                     <a href="#">
-                                        <img src="frontend/assets/images/demos/demo-3/banners/banner-3.jpg" alt="Banner">
+                                        <img src="frontend/assets/images/demos/demo-3/banners/banner-3.jpg"
+                                            alt="Banner">
                                     </a>
 
                                     <div class="banner-content">
@@ -828,10 +838,10 @@
                             }'>
                             <div class="product product-2">
                                 <figure class="product-media">
-                                    <a href="product.html">
-                                        <img src="frontend/assets/images/demos/demo-3/products/product-1.jpg" alt="Product image"
-                                            class="product-image">
-                                    </a>
+                                    <router-link to="/product" custom>
+                                        <img src="frontend/assets/images/demos/demo-3/products/product-1.jpg"
+                                            alt="Product image" class="product-image">
+                                    </router-link>
 
                                     <div class="product-action-vertical">
                                         <a href="#" class="btn-product-icon btn-wishlist btn-expandable"><span>add to
@@ -850,8 +860,11 @@
                                     <div class="product-cat">
                                         <a href="#">Cameras & Camcorders</a>
                                     </div><!-- End .product-cat -->
-                                    <h3 class="product-title"><a href="product.html">GoPro - HERO7 Black HD Waterproof
-                                            Action</a></h3><!-- End .product-title -->
+                                    <!-- Thêm router-link cho tên sản phẩm -->
+                                    <router-link :to="{ name: 'Product' }" class="product-title">
+                                        <h3>GoPro - HERO7 Black HD Waterproof Action</h3>
+                                    </router-link>
+
                                     <div class="product-price">
                                         $349.99
                                     </div><!-- End .product-price -->
@@ -868,8 +881,8 @@
                                 <figure class="product-media">
                                     <span class="product-label label-circle label-new">New</span>
                                     <a href="product.html">
-                                        <img src="frontend/assets/images/demos/demo-3/products/product-2.jpg" alt="Product image"
-                                            class="product-image">
+                                        <img src="frontend/assets/images/demos/demo-3/products/product-2.jpg"
+                                            alt="Product image" class="product-image">
                                         <img src="frontend/assets/images/demos/demo-3/products/product-2-2.jpg"
                                             alt="Product image" class="product-image-hover">
                                     </a>
@@ -917,8 +930,8 @@
                             <div class="product product-2">
                                 <figure class="product-media">
                                     <a href="product.html">
-                                        <img src="frontend/assets/images/demos/demo-3/products/product-3.jpg" alt="Product image"
-                                            class="product-image">
+                                        <img src="frontend/assets/images/demos/demo-3/products/product-3.jpg"
+                                            alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -956,8 +969,8 @@
                             <div class="product product-2">
                                 <figure class="product-media">
                                     <a href="product.html">
-                                        <img src="frontend/assets/images/demos/demo-3/products/product-4.jpg" alt="Product image"
-                                            class="product-image">
+                                        <img src="frontend/assets/images/demos/demo-3/products/product-4.jpg"
+                                            alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -994,8 +1007,8 @@
                             <div class="product product-2">
                                 <figure class="product-media">
                                     <a href="product.html">
-                                        <img src="frontend/assets/images/demos/demo-3/products/product-1.jpg" alt="Product image"
-                                            class="product-image">
+                                        <img src="frontend/assets/images/demos/demo-3/products/product-1.jpg"
+                                            alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -1056,8 +1069,8 @@
                             <div class="product product-2">
                                 <figure class="product-media">
                                     <a href="product.html">
-                                        <img src="frontend/assets/images/demos/demo-3/products/product-4.jpg" alt="Product image"
-                                            class="product-image">
+                                        <img src="frontend/assets/images/demos/demo-3/products/product-4.jpg"
+                                            alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -1094,8 +1107,8 @@
                             <div class="product product-2">
                                 <figure class="product-media">
                                     <a href="product.html">
-                                        <img src="frontend/assets/images/demos/demo-3/products/product-1.jpg" alt="Product image"
-                                            class="product-image">
+                                        <img src="frontend/assets/images/demos/demo-3/products/product-1.jpg"
+                                            alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -1132,8 +1145,8 @@
                             <div class="product product-2">
                                 <figure class="product-media">
                                     <a href="product.html">
-                                        <img src="frontend/assets/images/demos/demo-3/products/product-3.jpg" alt="Product image"
-                                            class="product-image">
+                                        <img src="frontend/assets/images/demos/demo-3/products/product-3.jpg"
+                                            alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -1172,8 +1185,8 @@
                                 <figure class="product-media">
                                     <span class="product-label label-circle label-new">New</span>
                                     <a href="product.html">
-                                        <img src="frontend/assets/images/demos/demo-3/products/product-2.jpg" alt="Product image"
-                                            class="product-image">
+                                        <img src="frontend/assets/images/demos/demo-3/products/product-2.jpg"
+                                            alt="Product image" class="product-image">
                                         <img src="frontend/assets/images/demos/demo-3/products/product-2-2.jpg"
                                             alt="Product image" class="product-image-hover">
                                     </a>
@@ -1245,8 +1258,8 @@
                             <div class="product product-2">
                                 <figure class="product-media">
                                     <a href="product.html">
-                                        <img src="frontend/assets/images/demos/demo-3/products/product-3.jpg" alt="Product image"
-                                            class="product-image">
+                                        <img src="frontend/assets/images/demos/demo-3/products/product-3.jpg"
+                                            alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -1284,8 +1297,8 @@
                             <div class="product product-2">
                                 <figure class="product-media">
                                     <a href="product.html">
-                                        <img src="frontend/assets/images/demos/demo-3/products/product-1.jpg" alt="Product image"
-                                            class="product-image">
+                                        <img src="frontend/assets/images/demos/demo-3/products/product-1.jpg"
+                                            alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -1322,8 +1335,8 @@
                             <div class="product product-2">
                                 <figure class="product-media">
                                     <a href="product.html">
-                                        <img src="frontend/assets/images/demos/demo-3/products/product-4.jpg" alt="Product image"
-                                            class="product-image">
+                                        <img src="frontend/assets/images/demos/demo-3/products/product-4.jpg"
+                                            alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -1361,8 +1374,8 @@
                                 <figure class="product-media">
                                     <span class="product-label label-circle label-new">New</span>
                                     <a href="product.html">
-                                        <img src="frontend/assets/images/demos/demo-3/products/product-2.jpg" alt="Product image"
-                                            class="product-image">
+                                        <img src="frontend/assets/images/demos/demo-3/products/product-2.jpg"
+                                            alt="Product image" class="product-image">
                                         <img src="frontend/assets/images/demos/demo-3/products/product-2-2.jpg"
                                             alt="Product image" class="product-image-hover">
                                     </a>
@@ -1410,8 +1423,8 @@
                             <div class="product product-2">
                                 <figure class="product-media">
                                     <a href="product.html">
-                                        <img src="frontend/assets/images/demos/demo-3/products/product-1.jpg" alt="Product image"
-                                            class="product-image">
+                                        <img src="frontend/assets/images/demos/demo-3/products/product-1.jpg"
+                                            alt="Product image" class="product-image">
                                     </a>
 
                                     <div class="product-action-vertical">
@@ -1460,7 +1473,8 @@
                                 <div class="cta-content">
                                     <div class="cta-heading">
                                         <h3 class="cta-title text-right"><span class="text-primary">New Deals</span>
-                                            <br>Start Daily at 12pm e.t.</h3><!-- End .cta-title -->
+                                            <br>Start Daily at 12pm e.t.
+                                        </h3><!-- End .cta-title -->
                                     </div><!-- End .cta-heading -->
 
                                     <div class="cta-text">
@@ -5296,48 +5310,11 @@
         </div><!-- End .modal-dialog -->
     </div><!-- End .modal -->
 
-    <div class="container newsletter-popup-container mfp-hide" id="newsletter-popup-form">
-        <div class="row justify-content-center">
-            <div class="col-10">
-                <div class="row no-gutters bg-white newsletter-popup-content">
-                    <div class="col-xl-3-5col col-lg-7 banner-content-wrap">
-                        <div class="banner-content text-center">
-                            <img src="frontend/assets/images/popup/newsletter/logo.png" class="logo" alt="logo" width="60"
-                                height="15">
-                            <h2 class="banner-title">get <span>25<light>%</light></span> off</h2>
-                            <p>Subscribe to the Molla eCommerce newsletter to receive timely updates from your favorite
-                                products.</p>
-                            <form action="#">
-                                <div class="input-group input-group-round">
-                                    <input type="email" class="form-control form-control-white"
-                                        placeholder="Your Email Address" aria-label="Email Adress" required>
-                                    <div class="input-group-append">
-                                        <button class="btn" type="submit"><span>go</span></button>
-                                    </div><!-- .End .input-group-append -->
-                                </div><!-- .End .input-group -->
-                            </form>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="register-policy-2" required>
-                                <label class="custom-control-label" for="register-policy-2">Do not show this popup
-                                    again</label>
-                            </div><!-- End .custom-checkbox -->
-                        </div>
-                    </div>
-                    <div class="col-xl-2-5col col-lg-5 ">
-                        <img src="frontend/assets/images/popup/newsletter/img-1.jpg" class="newsletter-img" alt="newsletter">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
 </template>
-
 <script>
 
 export default {
     name: 'MasterPage',
-
 }
 </script>
 <style></style>
