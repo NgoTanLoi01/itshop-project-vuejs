@@ -1,4 +1,4 @@
-# itshop-project-vuejs
+# source
 
 ## Project setup
 ```

@@ -1,25 +1,17 @@
-import { createRouter, createWebHistory } from "vue-router";
-import Master from "../views/Master.vue";
-
-import Product from "../views/pages/Product.vue";
+import { createRouter, createWebHistory } from 'vue-router';
+import MasterPage from '../Master.vue';
 
 const routes = [
   {
-    path: "/",
-    name: "Master",
-    component: Master,
-  },
-  //Product routes
-  {
-    path: "/product",
-    name: "Product",
-    component: Product,
-  },
+    path: '/',
+    name: 'master',
+    component: MasterPage
+  }
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
-  routes,
+  history: createWebHistory(process.env.BASE_URL),
+  routes
 });
 
 export default router;
