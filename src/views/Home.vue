@@ -1,4 +1,3 @@
-<!-- Home.vue: -->
 <template>
     <div class="page-wrapper">
       <Slider />
@@ -9,10 +8,10 @@
   </template>
   
   <script>
-  import Slider from '../components/Slider.vue';
-  import Featureproduct from '../components/Featureproduct.vue';
-  import Categorytab from '../components/Categorytab.vue';
-  import Sellingproduct from '../components/Sellingproduct.vue';
+  import Slider from '../components/product/Slider.vue';
+  import Featureproduct from '../components/product/Featureproduct.vue';
+  import Categorytab from '../components/product/Categorytab.vue';
+  import Sellingproduct from '../components/product/Sellingproduct.vue';
   
   export default {
     components: {
@@ -23,6 +22,3 @@
     }
   }
   </script>
-  
-  
-  

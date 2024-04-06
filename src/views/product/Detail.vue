@@ -5,7 +5,7 @@
         <div class="page-header text-center" style="background-image: url('frontend/assets/images/page-header-bg.jpg')">
             <div class="container">
                 <h1 class="page-title">Chi tiết sản phẩm</h1>
-            </div><!-- End .container -->
+            </div>
         </div>
 
         <main class="main">
@@ -631,15 +631,13 @@
             </div><!-- End .page-content -->
         </main><!-- End .main -->
 
-    </div><!-- End .page-wrapper -->
+    </div>
 </template>
 
 <script>
 export default {
-    // Component logic here
 };
 </script>
 
 <style>
-/* Component styles here */
 </style>

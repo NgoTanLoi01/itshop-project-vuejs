@@ -1,15 +1,16 @@
 // index.js:
 import { createRouter, createWebHistory } from "vue-router";
-import Master from "@/Master.vue";
-import Detail from "@/home/Detail.vue";
-import Home from "@/home/Home.vue";
+import Home from "@/views/Home.vue";
+
+import Detail from "@/views/product/Detail.vue";
+
 
 const routes = [
   {
     path: "/",
-    component: Master,
+    component: Home,
     children: [
-      { path: "", component: Home } // Route con cho Master.vue
+      { path: "", component: Home }
     ]
   },
   {

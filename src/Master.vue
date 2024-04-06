@@ -1,4 +1,4 @@
-<!-- Master.vue: -->
+<!-- App.vue được thay thế thành Master.vue: -->
 <template>
   <div>
     <Header />
@@ -8,8 +8,8 @@
 </template>
 
 <script>
-import Header from "@/components/Header.vue";
-import Footer from "@/components/Footer.vue";
+import Header from "./components/Header.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
   components: {
@@ -20,7 +20,6 @@ export default {
 </script>
 
 <style>
-/* Styling for the Master.vue component */
 </style>
 
 
