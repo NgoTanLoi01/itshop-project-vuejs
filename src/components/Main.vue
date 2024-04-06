@@ -1,7 +1,4 @@
 <template>
-    <main class="main">
-
-    </main><!-- End .main -->
 </template>
 
 <script>

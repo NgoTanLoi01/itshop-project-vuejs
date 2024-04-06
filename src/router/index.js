@@ -1,11 +1,20 @@
-import { createRouter, createWebHistory } from 'vue-router';
-import MasterPage from '../Master.vue';
+// index.js:
+import { createRouter, createWebHistory } from "vue-router";
+import Master from "@/Master.vue";
+import Detail from "@/home/Detail.vue";
+import Home from "@/home/Home.vue";
 
 const routes = [
   {
-    path: '/',
-    name: 'master',
-    component: MasterPage
+    path: "/",
+    component: Master,
+    children: [
+      { path: "", component: Home } // Route con cho Master.vue
+    ]
+  },
+  {
+    path: "/detail",
+    component: Detail
   }
 ];
 
@@ -15,3 +24,5 @@ const router = createRouter({
 });
 
 export default router;
+
+

@@ -1,33 +1,26 @@
+<!-- Master.vue: -->
 <template>
-  <div class="page-wrapper">
+  <div>
     <Header />
-    <Slider />
-    <Main />
-    <Featureproduct />
-    <Categorytab />
-    <Sellingproduct />
+    <router-view />
     <Footer />
   </div>
 </template>
 
 <script>
-import Header from '@/components/Header.vue';
-import Slider from './home/components/Slider.vue';
-import Main from '@/components/Main.vue'; 
-import Featureproduct from './home/components/Featureproduct.vue';
-import Categorytab from './home/components/Categorytab.vue';
-import Sellingproduct from './home/components/Sellingproduct.vue';
-import Footer from '@/components/Footer.vue'; 
+import Header from "@/components/Header.vue";
+import Footer from "@/components/Footer.vue";
 
 export default {
   components: {
     Header,
-    Slider,
-    Main,
-    Featureproduct,
-    Categorytab,
-    Sellingproduct,
-    Footer,
+    Footer
   }
-}
+};
 </script>
+
+<style>
+/* Styling for the Master.vue component */
+</style>
+
+
