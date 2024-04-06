@@ -40,31 +40,30 @@
                                 }
                             }'>
                     <div class="product product-2">
-                        <figure class="product-media">
-                            <a href="product.html">
-                                <img src="frontend/assets/images/demos/demo-3/products/product-1.jpg"
-                                    alt="Product image" class="product-image">
-                            </a>
+                        <router-link :to="{ path: '/detail' }" class="product-media">
+                            <img src="frontend/assets/images/demos/demo-3/products/product-1.jpg" alt="Product image"
+                                class="product-image">
+                        </router-link>
 
-                            <div class="product-action-vertical">
-                                <a href="#" class="btn-product-icon btn-wishlist btn-expandable"><span>add to
-                                        wishlist</span></a>
-                            </div><!-- End .product-action -->
+                        <div class="product-action-vertical">
+                            <a href="#" class="btn-product-icon btn-wishlist btn-expandable"><span>add to
+                                    wishlist</span></a>
+                        </div><!-- End .product-action -->
 
-                            <div class="product-action product-action-dark">
-                                <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to
-                                        cart</span></a>
-                                <a href="popup/quickView.html" class="btn-product btn-quickview"
-                                    title="Quick view"><span>quick view</span></a>
-                            </div><!-- End .product-action -->
-                        </figure><!-- End .product-media -->
+                        <div class="product-action product-action-dark">
+                            <a href="#" class="btn-product btn-cart" title="Add to cart"><span>add to cart</span></a>
+                            <a href="popup/quickView.html" class="btn-product btn-quickview"
+                                title="Quick view"><span>quick view</span></a>
+                        </div><!-- End .product-action -->
 
                         <div class="product-body">
                             <div class="product-cat">
                                 <a href="#">Cameras & Camcorders</a>
                             </div><!-- End .product-cat -->
-                            <h3 class="product-title"><a href="product.html">GoPro - HERO7 Black HD Waterproof
-                                    Action</a></h3><!-- End .product-title -->
+                            <h3 class="product-title">
+                                <router-link :to="{ path: '/detail' }">GoPro - HERO7 Black HD Waterproof
+                                    Action</router-link>
+                            </h3><!-- End .product-title -->
                             <div class="product-price">
                                 $349.99
                             </div><!-- End .product-price -->
