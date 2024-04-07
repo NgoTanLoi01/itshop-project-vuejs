@@ -35,7 +35,10 @@
                                                 </div><!-- End .header-menu -->
                                             </div>
                                         </li>
-                                        <li><a href="#signin-modal" data-toggle="modal">Sign in / Sign up</a></li>
+                                        <li>
+                                            <router-link to="/login" data-toggle="modal">Sign in / Sign
+                                                up</router-link>
+                                        </li>
                                     </ul>
                                 </li>
                             </ul><!-- End .top-menu -->
@@ -67,7 +70,7 @@
                                         <button class="btn btn-primary" type="submit"><i
                                                 class="icon-search"></i></button>
                                         <input type="search" class="form-control" name="q" id="q"
-                                            placeholder="Search product ..." required>
+                                            placeholder="Tìm kiếm sản phẩm ..." required>
                                     </div><!-- End .header-search-wrapper -->
                                 </form>
                             </div><!-- End .header-search -->
@@ -75,14 +78,6 @@
 
                         <div class="header-right">
                             <div class="dropdown compare-dropdown">
-                                <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false" data-display="static"
-                                    title="Compare Products" aria-label="Compare Products">
-                                    <div class="icon">
-                                        <i class="icon-random"></i>
-                                    </div>
-                                    <p>Compare</p>
-                                </a>
 
                                 <div class="dropdown-menu dropdown-menu-right">
                                     <ul class="compare-products">
@@ -99,34 +94,28 @@
                                                     Skirt</a></h4>
                                         </li>
                                     </ul>
-
-                                    <div class="compare-actions">
-                                        <a href="#" class="action-link">Clear All</a>
-                                        <a href="#" class="btn btn-outline-primary-2"><span>Compare</span><i
-                                                class="icon-long-arrow-right"></i></a>
-                                    </div>
                                 </div><!-- End .dropdown-menu -->
                             </div><!-- End .compare-dropdown -->
 
                             <div class="wishlist">
-                                <a href="wishlist.html" title="Wishlist">
+                                <router-link to="/wishlist" title="Wishlist">
                                     <div class="icon">
                                         <i class="icon-heart-o"></i>
                                         <span class="wishlist-count badge">3</span>
                                     </div>
-                                    <p>Wishlist</p>
-                                </a>
+                                    <p>Yêu thích</p>
+                                </router-link>
                             </div><!-- End .compare-dropdown -->
 
                             <div class="dropdown cart-dropdown">
-                                <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false" data-display="static">
+                                <router-link to="/cart" class="dropdown-toggle" role="button" aria-haspopup="true"
+                                    aria-expanded="false" data-display="static">
                                     <div class="icon">
                                         <i class="icon-shopping-cart"></i>
                                         <span class="cart-count">2</span>
                                     </div>
-                                    <p>Cart</p>
-                                </a>
+                                    <p>Giỏ hàng</p>
+                                </router-link>
 
                                 <div class="dropdown-menu dropdown-menu-right">
                                     <div class="dropdown-cart-products">
@@ -182,10 +171,10 @@
                                     </div><!-- End .dropdown-cart-total -->
 
                                     <div class="dropdown-cart-action">
-                                        <a href="cart.html" class="btn btn-primary">View Cart</a>
-                                        <a href="checkout.html"
-                                            class="btn btn-outline-primary-2"><span>Checkout</span><i
-                                                class="icon-long-arrow-right"></i></a>
+                                        <router-link to="/cart" href="cart.html" class="btn btn-primary">View
+                                            Cart</router-link>
+                                        <router-link to="/checkout" class="btn btn-outline-primary-2">
+                                            <span>Checkout</span><i class="icon-long-arrow-right"></i> </router-link>
                                     </div><!-- End .dropdown-cart-total -->
                                 </div><!-- End .dropdown-menu -->
                             </div><!-- End .cart-dropdown -->
@@ -199,8 +188,8 @@
                             <div class="dropdown category-dropdown">
                                 <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown"
                                     aria-haspopup="true" aria-expanded="false" data-display="static"
-                                    title="Browse Categories">
-                                    Browse Categories <i class="icon-angle-down"></i>
+                                    title="Danh mục sản phẩm">
+                                    Danh mục sản phẩm <i class="icon-angle-down"></i>
                                 </a>
 
                                 <div class="dropdown-menu">
@@ -227,7 +216,7 @@
                             <nav class="main-nav">
                                 <ul class="menu sf-arrows">
                                     <li class="megamenu-container active">
-                                        <a href="index.html" >Trang chủ</a>
+                                        <router-link to="/">Trang chủ</router-link>
                                     </li>
                                     <li>
                                         <a href="category.html" class="sf-with-ul">Cửa hàng</a>
@@ -238,53 +227,41 @@
                                                     <div class="menu-col">
                                                         <div class="row">
                                                             <div class="col-md-6">
-                                                                <div class="menu-title">Shop with sidebar</div>
-                                                                <!-- End .menu-title -->
+                                                                <div class="menu-title">Danh mục</div>
                                                                 <ul>
-                                                                    <li><a href="category-list.html">Shop List</a></li>
-                                                                    <li><a href="category-2cols.html">Shop Grid 2
-                                                                            Columns</a></li>
-                                                                    <li><a href="category.html">Shop Grid 3 Columns</a>
+                                                                    <li><router-link to="/store">Shop List</router-link>
                                                                     </li>
-                                                                    <li><a href="category-4cols.html">Shop Grid 4
-                                                                            Columns</a></li>
-                                                                    <li><a href="category-market.html"><span>Shop
-                                                                                Market<span
-                                                                                    class="tip tip-new">New</span></span></a>
+                                                                    <li><router-link to="/store">Shop Grid 2
+                                                                            Columns</router-link></li>
+                                                                    <li><router-link to="/store">Shop Grid 3
+                                                                            Columns</router-link></li>
+                                                                    <li><router-link to="/store">Shop Grid 4
+                                                                            Columns</router-link></li>
+                                                                    <li><router-link to="/store"><span>Shop Market<span
+                                                                                    class="tip tip-new">New</span></span></router-link>
                                                                     </li>
                                                                 </ul>
 
-                                                                <div class="menu-title">Shop no sidebar</div>
-                                                                <!-- End .menu-title -->
+                                                                <div class="menu-title">Thương hiệu</div>
                                                                 <ul>
-                                                                    <li><a href="category-boxed.html"><span>Shop Boxed
-                                                                                No Sidebar<span
-                                                                                    class="tip tip-hot">Hot</span></span></a>
+                                                                    <li><router-link to="/store"><span>Shop Boxed No
+                                                                                Sidebar<span
+                                                                                    class="tip tip-hot">Hot</span></span></router-link>
                                                                     </li>
-                                                                    <li><a href="category-fullwidth.html">Shop Fullwidth
-                                                                            No Sidebar</a></li>
+                                                                    <li><router-link to="/store">Shop Fullwidth No
+                                                                            Sidebar</router-link></li>
                                                                 </ul>
                                                             </div><!-- End .col-md-6 -->
 
                                                             <div class="col-md-6">
-                                                                <div class="menu-title">Product Category</div>
-                                                                <!-- End .menu-title -->
+                                                                <div class="menu-title">Danh mục khác</div>
                                                                 <ul>
-                                                                    <li><a href="product-category-boxed.html">Product
-                                                                            Category Boxed</a></li>
-                                                                    <li><a href="product-category-fullwidth.html"><span>Product
-                                                                                Category Fullwidth<span
-                                                                                    class="tip tip-new">New</span></span></a>
+                                                                    <li><router-link to="/store">Product Category
+                                                                            Boxed</router-link></li>
+                                                                    <li><router-link to="/store"><span>Product Category
+                                                                                Fullwidth<span
+                                                                                    class="tip tip-new">New</span></span></router-link>
                                                                     </li>
-                                                                </ul>
-                                                                <div class="menu-title">Shop Pages</div>
-                                                                <!-- End .menu-title -->
-                                                                <ul>
-                                                                    <li><a href="cart.html">Cart</a></li>
-                                                                    <li><a href="checkout.html">Checkout</a></li>
-                                                                    <li><a href="wishlist.html">Wishlist</a></li>
-                                                                    <li><a href="dashboard.html">My Account</a></li>
-                                                                    <li><a href="#">Lookbook</a></li>
                                                                 </ul>
                                                             </div><!-- End .col-md-6 -->
                                                         </div><!-- End .row -->
@@ -309,15 +286,15 @@
                                         </div><!-- End .megamenu megamenu-md -->
                                     </li>
                                     <li>
-                                        <a href="#" >Tin tức</a>
+                                        <router-link to="/blog">Tin tức</router-link>
                                     </li>
                                     <li>
-                                        <a href="blog.html" >Về chúng tôi</a>
+                                        <router-link to="/about">Về chúng tôi</router-link>
+                                    </li>
+                                    <li>
+                                        <router-link to="/contact">Liên hệ</router-link>
+                                    </li>
 
-                                    </li>
-                                    <li>
-                                        <a href="" >Liên hệ</a>
-                                    </li>
                                 </ul><!-- End .menu -->
                             </nav><!-- End .main-nav -->
                         </div><!-- End .header-center -->
